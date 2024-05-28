@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: greenyellow;
+}
+.navbar {
+  width: 100vw;
+  height: 3rem;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+}
+
+.ham {
+  display: none;
+}
+
+h1 {
+  color: green;
+  padding-left: 10px;
+}
+
+.logo h1 a {
+  color: darkgreen;
+}
+
+.logo h1 a:hover {
+  color: rgb(34, 189, 34);
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logo a img {
+  height: 35px;
+  border-radius: 50%;
+}
+
+.logoImg:hover {
+  border-radius: 0%;
+  transition: 0.2s ease-in;
+}
+
+.navElement {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 1rem;
+  color: rgb(1, 65, 1);
+}
+
+a:hover {
+  color: rgb(34, 189, 34);
+}
+
+.pages {
+  height: 240vh;
+  background-color: greenyellow;
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr 0.5fr;
+}
+
+.home {
+  background-color: darkgreen;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.home:hover {
+  border: 1px solid yellow;
+}
+
+.services {
+  background-color: darkgreen;
+  margin: 0px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.services:hover {
+  border: 1px solid yellow;
+}
+
+.contact {
+  background-color: darkgreen;
+  margin: 0px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.contact:hover {
+  border: 1px solid yellow;
+}
+
+.about {
+  background-color: darkgreen;
+  margin: 0px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.about:hover {
+  border: 1px solid yellow;
+}
+.footer {
+  height: 20vh;
+  background-color: rgb(17, 46, 17);
+  margin: 0px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navElement {
+    display: none;
+  }
+
+  .ham {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .mobel {
+    z-index: 50;
+    display: grid;
+    background-color: greenyellow;
+    width: 100vw;
+    top: 48px;
+    margin: 0px;
+    justify-content: center;
+    position: fixed;
+    display: none;
+  }
+
+  .active {
+    display: grid;
+  }
+}
