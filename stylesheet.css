@@ -133,7 +133,6 @@ a:hover {
 
   .mobel {
     z-index: 50;
-    display: grid;
     background-color: greenyellow;
     width: 100vw;
     top: 48px;
